@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(248, 223, 185);
+  padding: 20px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 2.5rem;
+}
+
+.nav-links a {
+  color: rgb(64, 109, 129);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(248, 223, 185);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: rgb(2, 61, 87);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(64, 109, 129);
+  margin: 5px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.page-principal {
+  background: blanchedalmond;
+  padding: 50px;
+}
+span {
+  color: rgb(64, 109, 129);
+}
+.textetet {
+  font-size: 38px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+.btn {
+  padding-bottom: 70px;
+}
+
+.btn button {
+  margin-top: 20px;
+  padding: 10px 45px;
+  background: rgb(64, 109, 129);
+  border-radius: 12px;
+  border: none;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+footer {
+  background: blanchedalmond;
+  padding: 5rem;
+  box-shadow: 0 0 20px 0 #ffae00;
+}
+footer p {
+  text-align: center;
+  font-weight: bolder;
+}
+/* la section apropos  */
+.apropos {
+  background: blanchedalmond;
+  padding-bottom: 1px;
+}
+.apropos h1 {
+  margin-left: 60px;
+}
+.apropos h1 a {
+  text-decoration: overline rgb(64, 109, 129);
+  color: black;
+}
+.ma-persnne {
+  text-align: center;
+  background: blanchedalmond;
+  margin-left: 24rem;
+  margin-right: 24rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 5px;
+  border-radius: 40px;
+  padding: 30px;
+  font-size: 25px;
+}
+.ma-persnne img {
+  border-radius: 50%;
+  box-shadow: 0 0 50px #ffae00;
+  margin-bottom: 10px;
+}
+
+/* la sectio de quiz  */
+.section-quiz {
+  text-align: center;
+  background: blanchedalmond;
+  margin-left: 24rem;
+  margin-right: 24rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 5px;
+  border-radius: 40px;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.icone i {
+  display: grid;
+  place-items: center;
+  background: rgb(248, 223, 185);
+  border-radius: 50%;
+  padding: 80px;
+  box-shadow: 0 0 20px 10px rgb(64, 109, 129);
+
+  margin: 0 9rem 10px 9rem;
+}
+.pres {
+  display: flex;
+  margin-left: 8rem;
+  gap: 20px;
+  text-align: center;
+  background: rgb(64, 109, 129);
+  margin-right: 6rem;
+  padding: 10px;
+  border-radius: 12px;
+}
+.desi {
+  padding: 10px;
+  background: rgb(0, 0, 0);
+  color: rgb(248, 223, 185);
+  border-radius: 12px;
+  width: 5em;
+}
+#answers button {
+  background: rgb(252, 212, 153);
+  cursor: pointer;
+  width: 25rem;
+  display: block;
+  border: none;
+  box-shadow: 0 0 15px 2px rgb(64, 109, 129);
+
+  padding: 10px;
+  gap: 15px;
+  margin-bottom: 10px;
+  margin-left: 3rem;
+  margin-top: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+#answers button:hover {
+  background-color: rgb(64, 109, 129);
+  cursor: pointer;
+}
+
+/* partie formulaire  */
+.calme {
+  display: block;
+  gap: 20px;
+  text-align: center;
+  background: blanchedalmond;
+  box-shadow: 0 0 5px;
+
+  margin-left: 27rem;
+  margin-right: 27rem;
+  padding: 5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.calme label {
+  margin-right: 13rem;
+  color: rgb(64, 109, 129);
+}
+.calme .moi {
+  margin-right: 13rem;
+}
+.calme input {
+  padding: 12px;
+  border-radius: 10px;
+  width: 19rem;
+}
+.calme button {
+  padding: 15px;
+  margin-top: 20px;
+  width: 17rem;
+  background: rgb(64, 109, 129);
+  border-radius: 12px;
+}
+#answers #restart {
+  margin-left: 4.3rem;
+}
+@media (max-width: 1024px) {
+  .ma-persnne,
+  .section-quiz,
+  .calme {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .icone i {
+    padding: 50px;
+    margin: 0 5rem 10px 5rem;
+  }
+
+  #answers button {
+    width: 80%;
+    margin-left: 10%;
+    cursor: pointer;
+  }
+
+  .calme {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: rgb(248, 223, 185);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    margin: 1.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .ma-persnne,
+  .section-quiz {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .textetet {
+    font-size: 30px;
+  }
+
+  .icone i {
+    padding: 40px;
+    margin: 0 auto 10px auto;
+  }
+
+  .pres {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .desi {
+    width: auto;
+  }
+
+  #answers button {
+    width: 90%;
+    margin-left: 5%;
+    cursor: pointer;
+  }
+
+  .calme {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2rem;
+  }
+  .calme label,
+  .calme .moi {
+    margin-right: 0;
+    text-align: left;
+    display: block;
+    width: 19rem;
+    margin: 0 auto;
+  }
+  .calme input {
+    width: 100%;
+    max-width: 19rem;
+  }
+  .calme button {
+    width: 19rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-principal {
+    padding: 20px;
+  }
+  .textetet {
+    font-size: 24px;
+  }
+
+  #answers button {
+    width: 100%;
+    margin-left: 0;
+    cursor: pointer;
+  }
+
+  .calme {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    margin-bottom: 3rem;
+  }
+  .calme input,
+  .calme button,
+  .calme label,
+  .calme .moi {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .apropos h1 {
+    margin-left: 20px;
+  }
+
+  .ma-persnne {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 2rem;
+    padding-bottom: 13rem;
+  }
+}
