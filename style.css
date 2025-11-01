@@ -90,7 +90,7 @@ span {
 }
 footer {
   background: blanchedalmond;
-  padding: 5rem;
+  padding: 2rem;
   box-shadow: 0 0 20px 0 #ffae00;
 }
 footer p {
@@ -150,6 +150,15 @@ footer p {
   box-shadow: 0 0 20px 10px rgb(64, 109, 129);
 
   margin: 0 9rem 10px 9rem;
+  animation: boucle 3s infinite;
+}
+@keyframes boucle {
+  50% {
+    box-shadow: 0 0 5px 2px rgb(255, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 5px 2px #ffae00;
+  }
 }
 .pres {
   display: flex;
@@ -167,6 +176,15 @@ footer p {
   color: rgb(248, 223, 185);
   border-radius: 12px;
   width: 5em;
+  animation: boucle 3s infinite;
+}
+@keyframes boucle {
+  50% {
+    box-shadow: 0 0 7px 2px rgb(255, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 7px 2px #ffae00;
+  }
 }
 #answers button {
   background: rgb(252, 212, 153);
@@ -175,7 +193,6 @@ footer p {
   display: block;
   border: none;
   box-shadow: 0 0 15px 2px rgb(64, 109, 129);
-
   padding: 10px;
   gap: 15px;
   margin-bottom: 10px;
@@ -186,9 +203,18 @@ footer p {
 }
 #answers button:hover {
   background-color: rgb(64, 109, 129);
+
   cursor: pointer;
 }
+.correct {
+  background-color: #4caf50 !important;
+  color: white;
+}
 
+.wrong {
+  background-color: #f44336 !important;
+  color: white;
+}
 /* partie formulaire  */
 .calme {
   display: block;
@@ -196,12 +222,11 @@ footer p {
   text-align: center;
   background: blanchedalmond;
   box-shadow: 0 0 5px;
-
   margin-left: 27rem;
   margin-right: 27rem;
   padding: 5rem;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 3rem;
   border-radius: 10px;
 }
 .calme label {
@@ -235,8 +260,8 @@ footer p {
   }
 
   .icone i {
-    padding: 50px;
-    margin: 0 5rem 10px 5rem;
+    padding: 30px;
+    margin: 0 5rem 10px 2rem;
   }
 
   #answers button {
@@ -294,6 +319,10 @@ footer p {
     margin-right: 5%;
     padding: 20px;
     font-size: 20px;
+    margin-bottom: 3rem;
+  }
+  .section-quiz {
+    margin-bottom: 6.1rem;
   }
 
   .textetet {
@@ -301,7 +330,7 @@ footer p {
   }
 
   .icone i {
-    padding: 40px;
+    padding: 80px;
     margin: 0 auto 10px auto;
   }
 
@@ -325,6 +354,7 @@ footer p {
     margin-left: 5%;
     margin-right: 5%;
     padding: 2rem;
+    margin-bottom: 22%;
   }
   .calme label,
   .calme .moi {
@@ -346,11 +376,11 @@ footer p {
 @media (max-width: 480px) {
   .page-principal {
     padding: 20px;
+    padding-bottom: 9rem;
   }
   .textetet {
     font-size: 24px;
   }
-
   #answers button {
     width: 100%;
     margin-left: 0;
@@ -361,8 +391,8 @@ footer p {
     margin-left: 2%;
     margin-right: 2%;
     padding: 1rem;
-    padding-bottom: 5rem;
-    margin-bottom: 3rem;
+    padding-bottom: 9rem;
+    margin-bottom: 16rem;
   }
   .calme input,
   .calme button,
@@ -380,10 +410,12 @@ footer p {
     margin-left: 2%;
     margin-right: 2%;
     font-size: 18px;
+    padding-bottom: 30px;
+    margin-bottom: 19rem;
   }
 
   footer {
-    padding: 2rem;
-    padding-bottom: 13rem;
+    padding: 20px;
+    padding-bottom: 3rem;
   }
 }

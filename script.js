@@ -186,11 +186,12 @@ function verifReponse(index, btn) {
   const q = questions[listeQuestion];
   if (index === q.correct) {
     btn.classList.add("correct");
+    btn.classList.add("red");
     lulu.textContent = "Bravo courage!"; // ici oont verifie si la bnn ou si ce la mouvaise reponse qui a etait clique
     score++;
     nouveQuestion();
   } else {
-    // btn.classList.add("wrong");
+    btn.classList.add("wrong");
     lulu.textContent = "Essaie encore ";
   }
 }
@@ -205,7 +206,7 @@ function compteRebours() {
       clearInterval(identifiant);
       nouveQuestion();
     }
-  }, 900);
+  }, 1900);
 }
 
 // fonction pour la gestion des questions
@@ -220,7 +221,7 @@ function nouveQuestion() {
     } else {
       pageFinal(); // pour la fin et l'affichager du score final
     }
-  }, 700);
+  }, 1200);
 }
 
 function pageFinal() {
